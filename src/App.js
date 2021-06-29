@@ -47,13 +47,18 @@ console.log(hasharray)
 
   }
 
+const mapData=(swearwords)=>{
 
+ swearwords.map(data=>{set(data)})
+}
+mapData(swearwords)
+
+const get=(value)=>{
+  
+}
   return (
     <div className="App">
-      {set(swearwords[0])}
-      {set(swearwords[2])}
-     {set("ववव")}
-
+     
 
     </div>
   );
