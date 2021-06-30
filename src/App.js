@@ -43,7 +43,7 @@ const  set=(value)=>{
 
     hasharray[index].push([value])
 console.log(hasharray)
-    return index
+   // return index
 
   }
 
@@ -54,8 +54,21 @@ const mapData=(swearwords)=>{
 mapData(swearwords)
 
 const get=(value)=>{
+ let index=hashkey(value)
+ if(!hasharray[index]) return false;
+ for(let bucket of hasharray[index]){
+  if(bucket[0]===value)
+  {
+    return true
   
+  }
+
+  }
+ 
 }
+let check=get("फक")
+console.log(check)
+
   return (
     <div className="App">
      
